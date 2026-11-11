@@ -350,3 +350,15 @@ table.cmp{border-collapse:collapse;width:100%;min-width:560px;font-size:.95rem}
 main,.site-footer{overflow-wrap:anywhere}
 
 .hero:before{background:linear-gradient(100deg,rgba(17,29,23,.9) 0%,rgba(17,29,23,.72) 46%,rgba(17,29,23,.32) 100%)}
+
+/* neighborhood pages: sources box and homepage block */
+.sources-card .src-list{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:12px}
+.sources-card .src-list li{padding-left:18px;position:relative;line-height:1.5}
+.sources-card .src-list li:before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--brass)}
+.sources-card .src-note{display:block;color:var(--muted,#5b6b61);font-size:.92rem}
+.nbhd-card .nbhd-list{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.nbhd-card .nbhd-list a{display:block;height:100%;padding:16px 18px;border:1px solid var(--border);border-radius:14px;text-decoration:none;color:inherit;background:var(--surface)}
+.nbhd-card .nbhd-list a:hover,.nbhd-card .nbhd-list a:focus-visible{border-color:var(--brass)}
+.nbhd-card .nbhd-list b{display:block;color:var(--forest,#2F4A3C);margin-bottom:4px}
+.nbhd-card .nbhd-list span{display:block;font-size:.94rem;line-height:1.45}
+@media (max-width:640px){.nbhd-card .nbhd-list{grid-template-columns:minmax(0,1fr)}}
